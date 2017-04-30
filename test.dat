@@ -1,0 +1,15 @@
+551c551,552
+< 			if (key >= c->keys[i]) i++;
+---
+> 		// changed > to <
+> 			if (key <= c->keys[i]) i++;
+671c672,673
+< 	while (insertion_point < leaf->num_keys && leaf->keys[insertion_point] < key)
+---
+> 	// changed < to >
+> 	while (insertion_point < leaf->num_keys && leaf->keys[insertion_point] > key)
+712c714,715
+< 	while (insertion_index < order - 1 && leaf->keys[insertion_index] < key)
+---
+> 	// changed < to >
+> 	while (insertion_index < order - 1 && leaf->keys[insertion_index] > key)
